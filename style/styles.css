@@ -7,6 +7,7 @@
 
 body {
     min-height: 100vh;
+    background-color: #EEEBDD;
 }
 
 li, a {
@@ -40,7 +41,6 @@ nav {
 }
 
 nav .logo a {
-    color: white;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -139,6 +139,7 @@ nav .links .dropdown:hover .dropdown-menu {
     color: white;
     background-color: #810000;
     transition: all 0.3s ease 0s;
+    font-weight:500;
 }
 
 .hero-text button:hover {
@@ -170,6 +171,10 @@ nav .links .dropdown:hover .dropdown-menu {
     }
 
     .hero-text {
-        font-size: 0.8rem;
+        font-size: 0.62rem;
+    }
+
+    .hero-text button {
+        padding: 0.7rem 0.7rem;
     }
 }
