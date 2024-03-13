@@ -114,7 +114,7 @@ nav .links .dropdown:hover .dropdown-menu {
 
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../src/hero-img.jpg);
-    height: 95vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +132,7 @@ nav .links .dropdown:hover .dropdown-menu {
 }
 
 .hero-text button {
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1rem 1rem;
     border-radius: 10px;
     border: none;
@@ -161,6 +161,7 @@ nav .links .dropdown:hover .dropdown-menu {
 
     .hero-text {
         font-size: 0.9rem;
+        text-align: center;
     }
 }
 
@@ -172,6 +173,7 @@ nav .links .dropdown:hover .dropdown-menu {
 
     .hero-text {
         font-size: 0.62rem;
+        text-align: center;
     }
 
     .hero-text button {
