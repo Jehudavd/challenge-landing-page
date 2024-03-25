@@ -10,3 +10,28 @@ toggleBtn.onclick = function(){
     ?'fa-solid fa-xmark'
     :'fa-solid fa-bars'
 }
+
+const carousel = document.querySelector('.carousel');
+const carouselInner = document.querySelector('.carousel-inner');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const carouselItems = document.querySelectorAll('.carousel-item');
+
+let currentIndex = 0;
+const totalItems = carouselItems.length;
+const itemWidth = carouselItems[0].clientWidth;
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = currentIndex > 0 ? currentIndex - 1 : totalItems - 1;
+  updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = currentIndex < totalItems - 1 ? currentIndex + 1 : 0;
+  updateCarousel();
+});
+
+function updateCarousel() {
+  const offset = -1 * currentIndex * itemWidth;
+  carouselInner.style.transform = `translateX(${offset}px)`;
+}
